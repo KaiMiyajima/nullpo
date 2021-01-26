@@ -27,9 +27,9 @@ async def on_message(message):
 
             # メッセージを"ms"変数に格納
             # ms = now + "に" + message.author.name + "さんがタイムカードを切りました。"
-            
+            ms = "ms = "ガッ"
             # メッセージを出力
-            await message.channel.send("ガッ")
+            await message.channel.send(ms)
 
 # Botの起動とDiscordサーバーへの接続
 client.run(token)
