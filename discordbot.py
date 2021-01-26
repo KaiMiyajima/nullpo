@@ -16,20 +16,20 @@ client = discord.Client()
 @client.event
 async def on_message(message):
     # ユーザが"/date"と入力するのを検知
-    if message.content.startswith("date"):
+    if message.content.startswith("ヌルポ"):
 
         # 送り主がBotだった場合反応したくないので
         if client.user != message.author:
 
             # 現在の時刻を取得して"now"変数に格納
-            JST = timezone(timedelta(hours=+9), 'JST')
-            now = datetime.now(JST).strftime('%H:%M')
+            # JST = timezone(timedelta(hours=+9), 'JST')
+            # now = datetime.now(JST).strftime('%H:%M')
 
             # メッセージを"ms"変数に格納
-            ms = now + "に" + message.author.name + "さんがタイムカードを切りました。"
-
+            # ms = now + "に" + message.author.name + "さんがタイムカードを切りました。"
+            
             # メッセージを出力
-            await message.channel.send(ms)
+            await message.channel.send("ガッ")
 
 # Botの起動とDiscordサーバーへの接続
 client.run(token)
