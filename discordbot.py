@@ -27,7 +27,7 @@ async def on_message(message):
 
             # メッセージを"ms"変数に格納
             # ms = now + "に" + message.author.name + "さんがタイムカードを切りました。"
-            ms = "ms = "ガッ"
+            ms = "ガッ"
             # メッセージを出力
             await message.channel.send(ms)
 
